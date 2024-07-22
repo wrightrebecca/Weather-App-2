@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecaster</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Enter a city..."
+          required
+          id="place-name-input"
+        />
+        <input
+          id="find-place"
+          class="search-button"
+          type="submit"
+          value="Search"
+        />
+      </form>
+      <section class="current-weather">
+        <h1 id="new-location-name">London</h1>
+        <p>
+          <span id="current-date"></span>, partly sunny<br />
+          Humidity: <strong>50%</strong>, Wind: <strong>7mph</strong>
+        </p>
+      </section>
+      <div class="temperature" id="location-temperature">
+        <span class="current-temperature-icon">☀️</span>
+        <span class="current-temperature">21°c</span>
+      </div>
+      <footer>
+        <p>
+          This page was coded by
+          <a href="-" target="blank">Rebecca Wright</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
